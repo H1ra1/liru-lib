@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Observer</title>
+    <link rel="stylesheet" href="./scss/all.min.css">
+    <script src="./lib/jquery.min.js" defer></script>
+    <script src="./js/liru.js"></script>
+</head>
+    <body>
+        <div class="spaceH"></div>
+        <div class="bloco" observerAnimate="slide-opacity"></div>
+        <div class="bloco" observerAnimate="slide-y"></div>
+        <div class="bloco" observerAnimate="slide-x-reverse"></div>
+        <div class="bloco" observerAnimate="slide-x"></div>
+        <div class="bloco" observerAnimate="slide-y-reverse"></div>
+        <div class="bloco" observerAnimate="slide-bounce-x"></div>
+        <div class="bloco" observerAnimate="slide-bounce-y"></div>
+        <div class="bloco" observerAnimate="slide-top-bounce"></div>
+
+        <script defer>
+            const liru = new Liru;
+            liru.observerAnimate(true, {rootMargin: '80px'});
+        </script>
+    </body>
+</html>

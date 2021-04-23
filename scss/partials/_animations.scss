@@ -1,0 +1,122 @@
+body {
+    background: rgb(89, 74, 114);
+    max-width: 100vw;
+    padding: 0;
+    margin: 0;
+
+    .spaceH {
+        height: calc(100vh + 800px);
+        width: 100%;
+    }
+
+    .bloco {
+        width: 400px;
+        height: 400px;
+        background: red;
+        margin-bottom: 100px;
+    }
+}
+
+// ========== default animations ==========
+// ::::CONFIGS VARS
+$time: 1s;
+// ::::/CONFIGS VARS
+
+
+// ::::slide-opacity
+.slide-opacity {
+    animation: slide-opacity $time linear forwards;
+}
+
+@keyframes slide-opacity {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+// /slide-opacity
+
+// ::::slide-x
+.slide-x {
+    animation: slide-x $time linear forwards;
+}
+
+@keyframes slide-x {
+    0% {transform: translateX(-100%); opacity: 0;}
+    100% {transform: translateX(0); opacity: 1;}
+}
+// /slide-x
+
+// ::::slide-x-reverse
+.slide-x-reverse {
+    animation: slide-x-reverse $time linear forwards;
+}
+
+@keyframes slide-x-reverse {
+    0% {transform: translateX(100%); opacity: 0;}
+    100% {transform: translateX(0); opacity: 1;}
+}
+// /slide-x-reverse
+
+// ::::slide-y
+.slide-y {
+    animation: slide-y $time linear forwards;
+}
+
+@keyframes slide-y {
+    0% {transform: translateY(-100px); opacity: 0;}
+    100% {transform: translateY(0); opacity: 1;}
+}
+// /slide-y
+
+// ::::slide-y-reverse
+.slide-y-reverse {
+    animation: slide-y-reverse $time linear forwards;
+}
+
+@keyframes slide-y-reverse {
+    0% {transform: translateY(100px); opacity: 0;}
+    100% {transform: translateY(0); opacity: 1;}
+}
+// /slide-y-reverse
+
+// ::::slide-bounce-x
+.slide-bounce-x {
+    animation: slide-bounce-x .6s cubic-bezier(0, 0, 0.14, 1.68) forwards;
+}
+
+@keyframes slide-bounce-x {
+    0% {transform: translateX(50px); opacity: 0;}
+    25% {transform: translateX(0); opacity: 1;}
+    50% {transform: translateX(50px);}
+    100% {transform: translateX(0);}
+}
+// /slide-bounce-x
+
+// ::::slide-bounce-y
+.slide-bounce-y {
+    animation: slide-bounce-y .6s cubic-bezier(0, 0, 0.14, 1.68) forwards;
+}
+
+@keyframes slide-bounce-y {
+    0% {transform: translateY(50px); opacity: 0;}
+    25% {transform: translateY(0); opacity: 1;}
+    50% {transform: translateY(50px);}
+    100% {transform: translateY(0);}
+}
+// /slide-bounce-y
+
+
+// ::::slide-bounce-y
+.slide-top-bounce {
+    animation: slide-top-bounce .6s cubic-bezier(0, 0, 0, 2.33) forwards;
+}
+
+@keyframes slide-top-bounce {
+    0% {transform: translateY(-100%); opacity: 0;}
+    100% {transform: translateY(0);  opacity: 1;}
+}
+// /slide-top-bounce
+
+
+
+
+
