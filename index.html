@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Observer</title>
     <link rel="stylesheet" href="./scss/all.min.css">
-    <script src="./lib/jquery.min.js" defer></script>
-    <script src="./js/liru.js"></script>
 </head>
     <body>
         <div class="spaceH"></div>
@@ -20,6 +18,8 @@
         <div class="bloco" observerAnimate="slide-bounce-y"></div>
         <div class="bloco" observerAnimate="slide-top-bounce"></div>
 
+        <script src="./lib/jquery.min.js"></script>
+        <script src="./js/liru.js"></script>
         <script defer>
             const liru = new Liru;
             liru.observerAnimate(true, {rootMargin: '80px'});
